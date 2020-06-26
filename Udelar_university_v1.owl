@@ -1,0 +1,289 @@
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: uni: <http://university.org/ontologies/uni#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://university.org/ontologies/uni>
+
+
+Datatype: rdfs:Literal
+
+    
+Datatype: xsd:integer
+
+    
+Datatype: xsd:string
+
+    
+ObjectProperty: uni:hasContent
+
+    
+ObjectProperty: uni:hasDepartment
+
+    
+ObjectProperty: uni:hasInstitute
+
+    
+ObjectProperty: uni:hasStudent
+
+    
+ObjectProperty: uni:hasSubject
+
+    
+ObjectProperty: uni:hasSubjectGroup
+
+    
+ObjectProperty: uni:hasTeacher
+
+    
+ObjectProperty: uni:hasUnit
+
+    
+ObjectProperty: uni:ofSubject
+
+    
+ObjectProperty: uni:study
+
+    
+ObjectProperty: uni:teach
+
+    
+DataProperty: uni:credits
+
+    
+DataProperty: uni:subject_type
+
+    
+Class: owl:Thing
+
+    
+Class: uni:Administrative_Staff
+
+    SubClassOf: 
+        uni:person
+    
+    DisjointWith: 
+        uni:Career, uni:Course, uni:Department, uni:Faculty, uni:Grade_Student, uni:Institute, uni:Organization, uni:Postgrade_Student, uni:Publication, uni:Research_Area, uni:Research_Program, uni:Student, uni:Subject, uni:Subject_Content, uni:Subject_Group, uni:Subject_Unit, uni:Teacher, uni:Teacher_Assistant, uni:Teacher_Titular
+    
+    
+Class: uni:Career
+
+    DisjointWith: 
+        uni:Administrative_Staff, uni:Course, uni:Department, uni:Faculty, uni:Grade_Student, uni:Institute, uni:Organization, uni:Postgrade_Student, uni:Publication, uni:Research_Area, uni:Research_Program, uni:Student, uni:Subject, uni:Subject_Content, uni:Subject_Group, uni:Subject_Unit, uni:Teacher, uni:Teacher_Assistant, uni:Teacher_Titular, uni:person
+    
+    
+Class: uni:Course
+
+    DisjointWith: 
+        uni:Administrative_Staff, uni:Career, uni:Department, uni:Faculty, uni:Grade_Student, uni:Institute, uni:Organization, uni:Postgrade_Student, uni:Publication, uni:Research_Area, uni:Research_Program, uni:Student, uni:Subject, uni:Subject_Content, uni:Subject_Group, uni:Subject_Unit, uni:Teacher, uni:Teacher_Assistant, uni:Teacher_Titular, uni:person
+    
+    
+Class: uni:Department
+
+    SubClassOf: 
+        uni:Organization
+    
+    DisjointWith: 
+        uni:Administrative_Staff, uni:Career, uni:Course, uni:Faculty, uni:Grade_Student, uni:Institute, uni:Postgrade_Student, uni:Publication, uni:Research_Area, uni:Research_Program, uni:Student, uni:Subject, uni:Subject_Content, uni:Subject_Group, uni:Subject_Unit, uni:Teacher, uni:Teacher_Assistant, uni:Teacher_Titular, uni:person
+    
+    
+Class: uni:Faculty
+
+    SubClassOf: 
+        uni:Organization
+    
+    DisjointWith: 
+        uni:Administrative_Staff, uni:Career, uni:Course, uni:Department, uni:Grade_Student, uni:Institute, uni:Postgrade_Student, uni:Publication, uni:Research_Area, uni:Research_Program, uni:Student, uni:Subject, uni:Subject_Content, uni:Subject_Group, uni:Subject_Unit, uni:Teacher, uni:Teacher_Assistant, uni:Teacher_Titular, uni:person
+    
+    
+Class: uni:Grade_Student
+
+    SubClassOf: 
+        uni:Student
+    
+    DisjointWith: 
+        uni:Administrative_Staff, uni:Career, uni:Course, uni:Department, uni:Faculty, uni:Institute, uni:Organization, uni:Postgrade_Student, uni:Publication, uni:Research_Area, uni:Research_Program, uni:Subject, uni:Subject_Content, uni:Subject_Group, uni:Subject_Unit, uni:Teacher, uni:Teacher_Assistant, uni:Teacher_Titular
+    
+    
+Class: uni:Institute
+
+    SubClassOf: 
+        uni:Organization
+    
+    DisjointWith: 
+        uni:Administrative_Staff, uni:Career, uni:Course, uni:Department, uni:Faculty, uni:Grade_Student, uni:Postgrade_Student, uni:Publication, uni:Research_Area, uni:Research_Program, uni:Student, uni:Subject, uni:Subject_Content, uni:Subject_Group, uni:Subject_Unit, uni:Teacher, uni:Teacher_Assistant, uni:Teacher_Titular, uni:person
+    
+    
+Class: uni:Organization
+
+    DisjointWith: 
+        uni:Administrative_Staff, uni:Career, uni:Course, uni:Grade_Student, uni:Postgrade_Student, uni:Publication, uni:Research_Area, uni:Research_Program, uni:Student, uni:Subject, uni:Subject_Content, uni:Subject_Group, uni:Subject_Unit, uni:Teacher, uni:Teacher_Assistant, uni:Teacher_Titular, uni:person
+    
+    
+Class: uni:Postgrade_Student
+
+    SubClassOf: 
+        uni:Student
+    
+    DisjointWith: 
+        uni:Administrative_Staff, uni:Career, uni:Course, uni:Department, uni:Faculty, uni:Grade_Student, uni:Institute, uni:Organization, uni:Publication, uni:Research_Area, uni:Research_Program, uni:Subject, uni:Subject_Content, uni:Subject_Group, uni:Subject_Unit, uni:Teacher, uni:Teacher_Assistant, uni:Teacher_Titular
+    
+    
+Class: uni:Publication
+
+    DisjointWith: 
+        uni:Administrative_Staff, uni:Career, uni:Course, uni:Department, uni:Faculty, uni:Grade_Student, uni:Institute, uni:Organization, uni:Postgrade_Student, uni:Research_Area, uni:Research_Program, uni:Student, uni:Subject, uni:Subject_Content, uni:Subject_Group, uni:Subject_Unit, uni:Teacher, uni:Teacher_Assistant, uni:Teacher_Titular, uni:person
+    
+    
+Class: uni:Research_Area
+
+    DisjointWith: 
+        uni:Administrative_Staff, uni:Career, uni:Course, uni:Department, uni:Faculty, uni:Grade_Student, uni:Institute, uni:Organization, uni:Postgrade_Student, uni:Publication, uni:Research_Program, uni:Student, uni:Subject, uni:Subject_Content, uni:Subject_Group, uni:Subject_Unit, uni:Teacher, uni:Teacher_Assistant, uni:Teacher_Titular, uni:person
+    
+    
+Class: uni:Research_Program
+
+    DisjointWith: 
+        uni:Administrative_Staff, uni:Career, uni:Course, uni:Department, uni:Faculty, uni:Grade_Student, uni:Institute, uni:Organization, uni:Postgrade_Student, uni:Publication, uni:Research_Area, uni:Student, uni:Subject, uni:Subject_Content, uni:Subject_Group, uni:Subject_Unit, uni:Teacher, uni:Teacher_Assistant, uni:Teacher_Titular, uni:person
+    
+    
+Class: uni:Student
+
+    SubClassOf: 
+        uni:person
+    
+    DisjointWith: 
+        uni:Administrative_Staff, uni:Career, uni:Course, uni:Department, uni:Faculty, uni:Institute, uni:Organization, uni:Publication, uni:Research_Area, uni:Research_Program, uni:Subject, uni:Subject_Content, uni:Subject_Group, uni:Subject_Unit, uni:Teacher, uni:Teacher_Assistant, uni:Teacher_Titular
+    
+    
+Class: uni:Subject
+
+    DisjointWith: 
+        uni:Administrative_Staff, uni:Career, uni:Course, uni:Department, uni:Faculty, uni:Grade_Student, uni:Institute, uni:Organization, uni:Postgrade_Student, uni:Publication, uni:Research_Area, uni:Research_Program, uni:Student, uni:Subject_Content, uni:Subject_Group, uni:Subject_Unit, uni:Teacher, uni:Teacher_Assistant, uni:Teacher_Titular, uni:person
+    
+    
+Class: uni:Subject_Content
+
+    DisjointWith: 
+        uni:Administrative_Staff, uni:Career, uni:Course, uni:Department, uni:Faculty, uni:Grade_Student, uni:Institute, uni:Organization, uni:Postgrade_Student, uni:Publication, uni:Research_Area, uni:Research_Program, uni:Student, uni:Subject, uni:Subject_Group, uni:Subject_Unit, uni:Teacher, uni:Teacher_Assistant, uni:Teacher_Titular, uni:person
+    
+    
+Class: uni:Subject_Group
+
+    DisjointWith: 
+        uni:Administrative_Staff, uni:Career, uni:Course, uni:Department, uni:Faculty, uni:Grade_Student, uni:Institute, uni:Organization, uni:Postgrade_Student, uni:Publication, uni:Research_Area, uni:Research_Program, uni:Student, uni:Subject, uni:Subject_Content, uni:Subject_Unit, uni:Teacher, uni:Teacher_Assistant, uni:Teacher_Titular, uni:person
+    
+    
+Class: uni:Subject_Unit
+
+    DisjointWith: 
+        uni:Administrative_Staff, uni:Career, uni:Course, uni:Department, uni:Faculty, uni:Grade_Student, uni:Institute, uni:Organization, uni:Postgrade_Student, uni:Publication, uni:Research_Area, uni:Research_Program, uni:Student, uni:Subject, uni:Subject_Content, uni:Subject_Group, uni:Teacher, uni:Teacher_Assistant, uni:Teacher_Titular, uni:person
+    
+    
+Class: uni:Teacher
+
+    SubClassOf: 
+        uni:person
+    
+    DisjointWith: 
+        uni:Administrative_Staff, uni:Career, uni:Course, uni:Department, uni:Faculty, uni:Grade_Student, uni:Institute, uni:Organization, uni:Postgrade_Student, uni:Publication, uni:Research_Area, uni:Research_Program, uni:Student, uni:Subject, uni:Subject_Content, uni:Subject_Group, uni:Subject_Unit
+    
+    
+Class: uni:Teacher_Assistant
+
+    SubClassOf: 
+        uni:Teacher
+    
+    DisjointWith: 
+        uni:Administrative_Staff, uni:Career, uni:Course, uni:Department, uni:Faculty, uni:Grade_Student, uni:Institute, uni:Organization, uni:Postgrade_Student, uni:Publication, uni:Research_Area, uni:Research_Program, uni:Student, uni:Subject, uni:Subject_Content, uni:Subject_Group, uni:Subject_Unit, uni:Teacher_Titular
+    
+    
+Class: uni:Teacher_Titular
+
+    SubClassOf: 
+        uni:Teacher
+    
+    DisjointWith: 
+        uni:Administrative_Staff, uni:Career, uni:Course, uni:Department, uni:Faculty, uni:Grade_Student, uni:Institute, uni:Organization, uni:Postgrade_Student, uni:Publication, uni:Research_Area, uni:Research_Program, uni:Student, uni:Subject, uni:Subject_Content, uni:Subject_Group, uni:Subject_Unit, uni:Teacher_Assistant
+    
+    
+Class: uni:person
+
+    DisjointWith: 
+        uni:Career, uni:Course, uni:Department, uni:Faculty, uni:Institute, uni:Organization, uni:Publication, uni:Research_Area, uni:Research_Program, uni:Subject, uni:Subject_Content, uni:Subject_Group, uni:Subject_Unit
+    
+    
+Individual: uni:Alvaro_Guerrero
+
+    Types: 
+        uni:Teacher_Titular
+    
+    Facts:  
+     uni:teach  uni:Economy
+    
+    
+Individual: uni:Economy
+
+    Types: 
+        uni:Subject
+    
+    Facts:  
+     uni:credits  30
+    
+    
+Individual: uni:Induction
+
+    Types: 
+        uni:Subject
+    
+    
+Individual: uni:Introduction_Politics
+
+    Types: 
+        uni:Subject
+    
+    
+Individual: uni:Introduction_Politics_2020
+
+    Types: 
+        uni:Course
+    
+    
+Individual: uni:Juan_Rios
+
+    Types: 
+        uni:Grade_Student
+    
+    Facts:  
+     uni:study  uni:Economy
+    
+    
+Individual: uni:Marcos_Viera
+
+    Types: 
+        uni:Grade_Student
+    
+    Facts:  
+     uni:study  uni:Introduction_Politics
+    
+    
+Individual: uni:Math
+
+    Types: 
+        uni:Subject
+    
+    
+Individual: uni:Political_Science
+
+    Types: 
+        uni:Career
+    
+    
+Rule: 
+    uni:Student(?x), uni:Subject(?y) -> uni:study(?x, ?y)
+

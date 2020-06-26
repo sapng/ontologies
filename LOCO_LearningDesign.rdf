@@ -1,0 +1,1425 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.lornet.org/LOCO#"
+     xml:base="http://www.lornet.org/LOCO"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.lornet.org/LOCO"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.lornet.org/LOCO#asCompetency -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#asCompetency">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#LearningObjective"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#Prerequisite"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Learning objective or prerequisites expressed in terms of competencies:1) target competencies in the case of learning objectives; 2) entry competencies in the case of prerequisites.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasAct -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasAct">
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#Play"/>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#Act"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasActivity">
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasActivityDescription -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasActivityDescription">
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#Activity"/>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#ActivityDescription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasAssignedActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasAssignedActivity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#RolePart"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#Activity"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#ActivityStructure"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasAssignedRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasAssignedRole">
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#RolePart"/>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasCompletitionReq -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasCompletitionReq">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#Act"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#Activity"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#Method"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#CompletitionRequirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasComponent"/>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasConferenceManager -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasConferenceManager">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#Conference"/>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasEnvironment -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasEnvironment">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#Activity"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#ActivityStructure"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#LearningActivity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#Environment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasInformation -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasInformation">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#ActivityStructure"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#Role"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasLearner -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasLearner">
+        <rdfs:subPropertyOf rdf:resource="http://www.lornet.org/LOCO#hasSubRole"/>
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#Learner"/>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#Learner"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasLearningActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasLearningActivity">
+        <rdfs:subPropertyOf rdf:resource="http://www.lornet.org/LOCO#hasActivity"/>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#LearningActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasLearningObjective -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasLearningObjective">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#LearningActivity"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#LearningDesign"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#LearningObjective"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasMetadata -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasMetadata">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasMethod -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasMethod">
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#LearningDesign"/>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasModerator -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasModerator">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#Conference"/>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasObserver -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasObserver">
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#Conference"/>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasOnCompletitionAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasOnCompletitionAction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#Act"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#Activity"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#Method"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#Play"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasParticipant">
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#Conference"/>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasPlay -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasPlay">
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#Method"/>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#Play"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasPrerequisite -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasPrerequisite">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#LearningActivity"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#LearningDesign"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#Prerequisite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasResource -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasResource">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#LearningObject"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#ResourceDescription"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasRolePart -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasRolePart">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#Act"/>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#RolePart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasStaff -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasStaff">
+        <rdfs:subPropertyOf rdf:resource="http://www.lornet.org/LOCO#hasSubRole"/>
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#Staff"/>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#Staff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasSubRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasSubRole">
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#Role"/>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasSupportActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#hasSupportActivity">
+        <rdfs:subPropertyOf rdf:resource="http://www.lornet.org/LOCO#hasActivity"/>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#SupportActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#isOfActivityType -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#isOfActivityType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#Activity"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The range of the propery is expected to be an instance from the ontology of activity types.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#playCompletitionReq -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#playCompletitionReq">
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#WhenPlayCompleted"/>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#Play"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#rolePartCompletitionReq -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#rolePartCompletitionReq">
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#WhenRolePartCompleted"/>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#RolePart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#sendMailToRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#sendMailToRole">
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#SendMail"/>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#supportsRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#supportsRole">
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#SupportActivity"/>
+        <rdfs:range rdf:resource="http://www.lornet.org/LOCO#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#targetCompetency -->
+
+    <owl:ObjectProperty rdf:about="http://www.lornet.org/LOCO#targetCompetency"/>
+    
+
+
+    <!-- oc:isContextOf -->
+
+    <owl:ObjectProperty rdf:about="oc:isContextOf"/>
+    
+
+
+    <!-- oc:usedInActivity -->
+
+    <owl:ObjectProperty rdf:about="oc:usedInActivity"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.lornet.org/LOCO#basedOnInstructionalModel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lornet.org/LOCO#basedOnInstructionalModel">
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#LearningDesign"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#hasTimeLimit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lornet.org/LOCO#hasTimeLimit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#TimeLimit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#href -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lornet.org/LOCO#href">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#isOfConferenceType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lornet.org/LOCO#isOfConferenceType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#Conference"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">announcement</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asynchronous</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synchronous</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#isOfMailType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lornet.org/LOCO#isOfMailType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#SendMail"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-persons-in-role</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">persons-in-role</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#isOfStructureType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lornet.org/LOCO#isOfStructureType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.lornet.org/LOCO#ActivityStructure"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">selection</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lornet.org/LOCO#title">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#Act"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#Component"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#LearningDesign"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#Play"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#ResourceDescription"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#RolePart"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#Service"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.lornet.org/LOCO#Act -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#Act">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasCompletitionReq"/>
+                <owl:allValuesFrom rdf:resource="http://www.lornet.org/LOCO#CompleteAct"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasOnCompletitionAction"/>
+                <owl:allValuesFrom rdf:resource="http://www.lornet.org/LOCO#FeedbackDescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasCompletitionReq"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasOnCompletitionAction"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasRolePart"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasCompletitionReq"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#title"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#Activity -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#Component"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasCompletitionReq"/>
+                <owl:allValuesFrom rdf:resource="http://www.lornet.org/LOCO#CompleteActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasOnCompletitionAction"/>
+                <owl:allValuesFrom rdf:resource="http://www.lornet.org/LOCO#FeedbackDescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasCompletitionReq"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasEnvironment"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasOnCompletitionAction"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#isOfActivityType"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasActivityDescription"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasOnCompletitionAction"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#ActivityStructure"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#Environment"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#ActivityDescription -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#ActivityDescription">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#ResourceDescription"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#FeedbackDescription"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#LearningObject"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#LearningObjective"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#Prerequisite"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#Service"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The activity-description is the actual cue given to the user (rendered in the user-interface) to describe the activity to be performed by the user. In most cases the activity-description is a text (of type webcontent). In other cases it can be an audio-file (webcontent), a video file or any
+other cue to the user.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#ActivityStructure -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#ActivityStructure">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#Component"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasComponent"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.lornet.org/LOCO#Activity"/>
+                            <rdf:Description rdf:about="http://www.lornet.org/LOCO#ActivityStructure"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasComponent"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasEnvironment"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasInformation"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#isOfStructureType"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#Environment"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#CompleteAct -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#CompleteAct">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#TimeLimit"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#WhenRolePartCompleted"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#CompletitionRequirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#CompleteActivity -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#CompleteActivity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#TimeLimit"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#UserChoice"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#CompletitionRequirement"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contains a choice of elements to specify when an activity is
+completed. When this element doesn&apos;t occur, the activity is
+set to &apos;completed&apos;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#CompletePlay -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#CompletePlay">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#TimeLimit"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#WhenLastActComplete"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#CompletitionRequirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#CompleteUoL -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#CompleteUoL">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#TimeLimit"/>
+                    <rdf:Description rdf:about="http://www.lornet.org/LOCO#WhenPlayCompleted"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#CompletitionRequirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#CompletitionRequirement -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#CompletitionRequirement"/>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#Component -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#Component">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#title"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Components provide the &apos;building blocks&apos; for the method section of the learning design. The component and the method sections can be
+compared to a cooking recipe: the components are the list of ingredients and the method is the preparation instructions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#Conference -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#Conference">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#Service"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasConferenceManager"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasModerator"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasObserver"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasParticipant"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#isOfConferenceType"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#IndexSearch"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#SendMail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#Dossier -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#Dossier">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#Resource"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#IMSLDContent"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#Person"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#ServiceFacility"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#WebContent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#Environment -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#Environment">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#Component"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasComponent"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.lornet.org/LOCO#Service"/>
+                            <rdf:Description rdf:about="oc:LearningObjectContext"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasComponent"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#FeedbackDescription -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#FeedbackDescription">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#ResourceDescription"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#LearningObject"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#LearningObjective"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#Prerequisite"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#IMSLDContent -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#IMSLDContent">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#href"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#Person"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#ServiceFacility"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#WebContent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#IndexSearch -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#IndexSearch">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#Service"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#SendMail"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Declares an index and/or search service facility.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#Learner -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#Learner">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasLearner"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#LearningActivity -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#LearningActivity">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#Activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasLearningObjective"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasPrerequisite"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Learning Activity consists of a single activity-description and several optional elements.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#LearningDesign -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#LearningDesign">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasComponent"/>
+                <owl:allValuesFrom rdf:resource="http://www.lornet.org/LOCO#Component"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasLearningObjective"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasPrerequisite"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasMethod"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#title"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#LearningObject -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#LearningObject">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#ResourceDescription"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasComponent"/>
+                <owl:allValuesFrom rdf:resource="http://www.lornet.org/LOCO#LearningObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasResource"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.lornet.org/LOCO#IMSLDContent"/>
+                            <rdf:Description rdf:about="http://www.lornet.org/LOCO#WebContent"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#LearningObjective"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#Prerequisite"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#LearningObjective -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#LearningObjective">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#ResourceDescription"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasResource"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.lornet.org/LOCO#IMSLDContent"/>
+                            <rdf:Description rdf:about="http://www.lornet.org/LOCO#WebContent"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#asCompetency"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#Prerequisite"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#Method -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#Method">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasCompletitionReq"/>
+                <owl:allValuesFrom rdf:resource="http://www.lornet.org/LOCO#CompleteUoL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasOnCompletitionAction"/>
+                <owl:allValuesFrom rdf:resource="http://www.lornet.org/LOCO#FeedbackDescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasCompletitionReq"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasOnCompletitionAction"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasPlay"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasCompletitionReq"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasOnCompletitionAction"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#Person -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#Person">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#Resource"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#ServiceFacility"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#WebContent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#Play -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#Play">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasOnCompletitionAction"/>
+                <owl:allValuesFrom rdf:resource="http://www.lornet.org/LOCO#FeedbackDescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasAct"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasOnCompletitionAction"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#title"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#Prerequisite -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#Prerequisite">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#ResourceDescription"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasResource"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.lornet.org/LOCO#IMSLDContent"/>
+                            <rdf:Description rdf:about="http://www.lornet.org/LOCO#WebContent"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#asCompetency"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#Resource -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#Resource"/>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#ResourceDescription -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#ResourceDescription">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasResource"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#title"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#Role -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#Role">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#Component"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasInformation"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasSubRole"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#RolePart -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#RolePart">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasAssignedActivity"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasAssignedRole"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#title"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#SendMail -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#SendMail">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#Service"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#sendMailToRole"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#isOfMailType"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#Service -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#Service">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#title"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#ServiceFacility -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#ServiceFacility">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#Resource"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#WebContent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Tthe abstract declaration of a service facility is called a
+&apos;service&apos;. The instantiation of a service is called a &apos;service facility&apos;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#Staff -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#Staff">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#hasStaff"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#SupportActivity -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#SupportActivity">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#Activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#supportsRole"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#TimeLimit -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#TimeLimit">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#CompleteAct"/>
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#CompleteActivity"/>
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#CompletePlay"/>
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#CompleteUoL"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#UserChoice"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#WhenLastActComplete"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#WhenPlayCompleted"/>
+        <owl:disjointWith rdf:resource="http://www.lornet.org/LOCO#WhenRolePartCompleted"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#UserChoice -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#UserChoice">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#CompleteActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#WebContent -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#WebContent">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#href"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#WhenLastActComplete -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#WhenLastActComplete">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#CompletePlay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#WhenPlayCompleted -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#WhenPlayCompleted">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#CompleteUoL"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#playCompletitionReq"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lornet.org/LOCO#WhenRolePartCompleted -->
+
+    <owl:Class rdf:about="http://www.lornet.org/LOCO#WhenRolePartCompleted">
+        <rdfs:subClassOf rdf:resource="http://www.lornet.org/LOCO#CompleteAct"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lornet.org/LOCO#rolePartCompletitionReq"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- oc:LearningObjectContext -->
+
+    <owl:Class rdf:about="oc:LearningObjectContext">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="oc:isContextOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.lornet.org/LOCO#LearningObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="oc:usedInActivity"/>
+                <owl:allValuesFrom rdf:resource="http://www.lornet.org/LOCO#Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

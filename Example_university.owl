@@ -1,0 +1,1261 @@
+Prefix(:=<http://university.edu/univ#>)
+Prefix(p1:=<http://university.edu/univ#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(xsp:=<http://www.owl-ontologies.com/2005/08/07/xsp.owl#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(swrl:=<http://www.w3.org/2003/11/swrl#>)
+Prefix(univ:=<http://university.edu/univ#>)
+Prefix(swrlb:=<http://www.w3.org/2003/11/swrlb#>)
+Prefix(protege:=<http://protege.stanford.edu/plugins/owl/protege#>)
+
+
+Ontology(<http://university.edu/univ>
+
+Declaration(Class(univ:ADIS))
+Declaration(Class(univ:AdministrativeStaff))
+Declaration(Class(univ:Article))
+Declaration(Class(univ:Assistant))
+Declaration(Class(univ:Assistant_professor))
+Declaration(Class(univ:Associate_Professor))
+Declaration(Class(univ:BMath))
+Declaration(Class(univ:BStat))
+Declaration(Class(univ:Book))
+Declaration(Class(univ:BookArticle))
+Declaration(Class(univ:Centre))
+Declaration(Class(univ:Conference))
+Declaration(Class(univ:ConferenceArticle))
+Declaration(Class(univ:Course_Name))
+Declaration(Class(univ:Director))
+Declaration(Class(univ:Discipline))
+Declaration(Class(univ:DoctoralThesis))
+Declaration(Class(univ:Events))
+Declaration(Class(univ:Gender))
+Declaration(Class(univ:Journal))
+Declaration(Class(univ:JournalArticle))
+Declaration(Class(univ:Junior_Research_Student))
+Declaration(Class(univ:MMath))
+Declaration(Class(univ:MStat))
+Declaration(Class(univ:Magazine))
+Declaration(Class(univ:MastersThesis))
+Declaration(Class(univ:Periodical))
+Declaration(Class(univ:Person))
+Declaration(Class(univ:PhD_Programme))
+Declaration(Class(univ:PostDoc_Programme))
+Declaration(Class(univ:Postgraduate_Course))
+Declaration(Class(univ:Postgraduate_Student))
+Declaration(Class(univ:Proceedings))
+Declaration(Class(univ:Professor))
+Declaration(Class(univ:Project))
+Declaration(Class(univ:ProjectAssistant))
+Declaration(Class(univ:Publication))
+Declaration(Class(univ:Qualification))
+Declaration(Class(univ:Research))
+Declaration(Class(univ:Research_Interest))
+Declaration(Class(univ:Research_Student))
+Declaration(Class(univ:Research_Topic))
+Declaration(Class(univ:Senior_Research_Student))
+Declaration(Class(univ:Student))
+Declaration(Class(univ:Teacher))
+Declaration(Class(univ:Thesis))
+Declaration(Class(univ:Undergraduate_Course))
+Declaration(Class(univ:Undergraduate_Student))
+Declaration(Class(univ:Unit))
+Declaration(Class(univ:Workshop))
+Declaration(Class(univ:WorkshopArticle))
+Declaration(ObjectProperty(univ:affiliationOf))
+Declaration(ObjectProperty(univ:belongsToCentre))
+Declaration(ObjectProperty(univ:centretHead))
+Declaration(ObjectProperty(univ:editorOfEvents))
+Declaration(ObjectProperty(univ:eventsEditor))
+Declaration(ObjectProperty(univ:hasAffiliation))
+Declaration(ObjectProperty(univ:hasArticlePublication))
+Declaration(ObjectProperty(univ:hasAuthor))
+Declaration(ObjectProperty(univ:hasBookPublication))
+Declaration(ObjectProperty(univ:hasDiscipline))
+Declaration(ObjectProperty(univ:hasGender))
+Declaration(ObjectProperty(univ:hasPrincipalInvestigator))
+Declaration(ObjectProperty(univ:hasQualification))
+Declaration(ObjectProperty(univ:hasResearchInterest))
+Declaration(ObjectProperty(univ:hasSupervisor))
+Declaration(ObjectProperty(univ:listedCourse))
+Declaration(ObjectProperty(univ:pgStudent))
+Declaration(ObjectProperty(univ:principleInvestigatorOf))
+Declaration(ObjectProperty(univ:projectAssistantOf))
+Declaration(ObjectProperty(univ:researchArea))
+Declaration(ObjectProperty(univ:researchInterestOf))
+Declaration(ObjectProperty(univ:supervisorOf))
+Declaration(ObjectProperty(univ:ugStudent))
+Declaration(ObjectProperty(univ:unitHead))
+Declaration(DataProperty(univ:ZIP))
+Declaration(DataProperty(univ:age))
+Declaration(DataProperty(univ:award))
+Declaration(DataProperty(univ:basicSalary))
+Declaration(DataProperty(univ:city))
+Declaration(DataProperty(univ:country))
+Declaration(DataProperty(univ:dateOfBirth))
+Declaration(DataProperty(univ:email))
+Declaration(DataProperty(univ:eventsAttended))
+Declaration(DataProperty(univ:firstName))
+Declaration(DataProperty(univ:grossSalary))
+Declaration(DataProperty(univ:hasProjectDuration))
+Declaration(DataProperty(univ:hasTeachingExperience))
+Declaration(DataProperty(univ:heldOn))
+Declaration(DataProperty(univ:homepage))
+Declaration(DataProperty(univ:lastName))
+Declaration(DataProperty(univ:phoneNo))
+Declaration(DataProperty(univ:projectEnds))
+Declaration(DataProperty(univ:projectStarted))
+Declaration(DataProperty(univ:publicationDate))
+Declaration(DataProperty(univ:resourcePersonOf))
+Declaration(DataProperty(univ:rollNo))
+Declaration(DataProperty(univ:state))
+Declaration(DataProperty(univ:topicOf))
+Declaration(NamedIndividual(univ:A.R.D._Prasad))
+Declaration(NamedIndividual(univ:ADIS_1st_year))
+Declaration(NamedIndividual(univ:ADIS_2nd_year))
+Declaration(NamedIndividual(univ:AI))
+Declaration(NamedIndividual(univ:Agrometry))
+Declaration(NamedIndividual(univ:Anand_Kumar_Pandey))
+Declaration(NamedIndividual(univ:Anthropology))
+Declaration(NamedIndividual(univ:Automatic_classification))
+Declaration(NamedIndividual(univ:BA))
+Declaration(NamedIndividual(univ:BCom))
+Declaration(NamedIndividual(univ:BMath_1st_year))
+Declaration(NamedIndividual(univ:BMath_2nd_year))
+Declaration(NamedIndividual(univ:BMath_3rd_year))
+Declaration(NamedIndividual(univ:BSc))
+Declaration(NamedIndividual(univ:BStat_1st_year))
+Declaration(NamedIndividual(univ:BStat_2nd_year))
+Declaration(NamedIndividual(univ:BStat_3rd_year))
+Declaration(NamedIndividual(univ:Bibliometrics))
+Declaration(NamedIndividual(univ:Biswanath_Dutta))
+Declaration(NamedIndividual(univ:Commerce))
+Declaration(NamedIndividual(univ:Computer_Science))
+Declaration(NamedIndividual(univ:DL2005))
+Declaration(NamedIndividual(univ:DRTC))
+Declaration(NamedIndividual(univ:Data_mining))
+Declaration(NamedIndividual(univ:Devika_P_Madalli))
+Declaration(NamedIndividual(univ:Digital_Library))
+Declaration(NamedIndividual(univ:Digital_library))
+Declaration(NamedIndividual(univ:EMU))
+Declaration(NamedIndividual(univ:Faceted_ontology))
+Declaration(NamedIndividual(univ:Geometry))
+Declaration(NamedIndividual(univ:HigherSecondary))
+Declaration(NamedIndividual(univ:History))
+Declaration(NamedIndividual(univ:I.K._Ravichandra_Rao))
+Declaration(NamedIndividual(univ:ICSD2007))
+Declaration(NamedIndividual(univ:ICT2006))
+Declaration(NamedIndividual(univ:ISIBC))
+Declaration(NamedIndividual(univ:ISICC))
+Declaration(NamedIndividual(univ:ISIDC))
+Declaration(NamedIndividual(univ:KS_Raghavan))
+Declaration(NamedIndividual(univ:Knowledge_Management))
+Declaration(NamedIndividual(univ:Library_and_Information_Science))
+Declaration(NamedIndividual(univ:MA))
+Declaration(NamedIndividual(univ:MCom))
+Declaration(NamedIndividual(univ:MLISc))
+Declaration(NamedIndividual(univ:MMath_1st_year))
+Declaration(NamedIndividual(univ:MMath_2nd_year))
+Declaration(NamedIndividual(univ:MPhil))
+Declaration(NamedIndividual(univ:MSc))
+Declaration(NamedIndividual(univ:Manju_M))
+Declaration(NamedIndividual(univ:Mathematics))
+Declaration(NamedIndividual(univ:Metrics))
+Declaration(NamedIndividual(univ:Mithun_Raj_M))
+Declaration(NamedIndividual(univ:NC2005))
+Declaration(NamedIndividual(univ:NLP))
+Declaration(NamedIndividual(univ:Nabonita_Guha))
+Declaration(NamedIndividual(univ:Next_generation_catalogue))
+Declaration(NamedIndividual(univ:Ontology))
+Declaration(NamedIndividual(univ:Operations_Research))
+Declaration(NamedIndividual(univ:PhD))
+Declaration(NamedIndividual(univ:Physics))
+Declaration(NamedIndividual(univ:Pradip_Patra))
+Declaration(NamedIndividual(univ:Quantitative_analysis))
+Declaration(NamedIndividual(univ:Radharani_Rit))
+Declaration(NamedIndividual(univ:SMU))
+Declaration(NamedIndividual(univ:SQC))
+Declaration(NamedIndividual(univ:SS_Panza))
+Declaration(NamedIndividual(univ:SWS))
+Declaration(NamedIndividual(univ:Sanjeev_Kumar_Sunny))
+Declaration(NamedIndividual(univ:Semantic_Web_based_e-Government_services))
+Declaration(NamedIndividual(univ:Statistics))
+Declaration(NamedIndividual(univ:TSSK_Rao))
+Declaration(NamedIndividual(univ:Vinit_Kumar))
+Declaration(NamedIndividual(univ:female))
+Declaration(NamedIndividual(univ:male))
+Declaration(Datatype(xsd:date))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: univ:affiliationOf (univ:affiliationOf)
+
+InverseObjectProperties(univ:affiliationOf univ:hasAffiliation)
+ObjectPropertyDomain(univ:affiliationOf univ:Unit)
+ObjectPropertyRange(univ:affiliationOf univ:Person)
+
+# Object Property: univ:belongsToCentre (univ:belongsToCentre)
+
+ObjectPropertyDomain(univ:belongsToCentre univ:Person)
+ObjectPropertyRange(univ:belongsToCentre univ:Centre)
+
+# Object Property: univ:centretHead (univ:centretHead)
+
+ObjectPropertyDomain(univ:centretHead univ:Centre)
+ObjectPropertyRange(univ:centretHead univ:Teacher)
+
+# Object Property: univ:editorOfEvents (univ:editorOfEvents)
+
+InverseObjectProperties(univ:editorOfEvents univ:eventsEditor)
+ObjectPropertyDomain(univ:editorOfEvents univ:Teacher)
+ObjectPropertyRange(univ:editorOfEvents univ:Events)
+
+# Object Property: univ:eventsEditor (univ:eventsEditor)
+
+ObjectPropertyDomain(univ:eventsEditor univ:Events)
+ObjectPropertyRange(univ:eventsEditor univ:Teacher)
+
+# Object Property: univ:hasAffiliation (univ:hasAffiliation)
+
+ObjectPropertyDomain(univ:hasAffiliation univ:Person)
+ObjectPropertyRange(univ:hasAffiliation univ:Unit)
+
+# Object Property: univ:hasArticlePublication (univ:hasArticlePublication)
+
+ObjectPropertyDomain(univ:hasArticlePublication univ:Person)
+ObjectPropertyRange(univ:hasArticlePublication univ:Article)
+
+# Object Property: univ:hasAuthor (univ:hasAuthor)
+
+ObjectPropertyDomain(univ:hasAuthor univ:Publication)
+ObjectPropertyRange(univ:hasAuthor univ:Person)
+
+# Object Property: univ:hasBookPublication (univ:hasBookPublication)
+
+ObjectPropertyDomain(univ:hasBookPublication univ:Person)
+ObjectPropertyRange(univ:hasBookPublication univ:Book)
+
+# Object Property: univ:hasDiscipline (univ:hasDiscipline)
+
+ObjectPropertyDomain(univ:hasDiscipline univ:Student)
+ObjectPropertyRange(univ:hasDiscipline univ:Discipline)
+
+# Object Property: univ:hasGender (univ:hasGender)
+
+ObjectPropertyDomain(univ:hasGender univ:Person)
+ObjectPropertyRange(univ:hasGender univ:Gender)
+
+# Object Property: univ:hasPrincipalInvestigator (univ:hasPrincipalInvestigator)
+
+InverseObjectProperties(univ:hasPrincipalInvestigator univ:principleInvestigatorOf)
+ObjectPropertyDomain(univ:hasPrincipalInvestigator univ:Project)
+ObjectPropertyRange(univ:hasPrincipalInvestigator univ:Teacher)
+
+# Object Property: univ:hasQualification (univ:hasQualification)
+
+ObjectPropertyDomain(univ:hasQualification univ:Person)
+ObjectPropertyRange(univ:hasQualification univ:Qualification)
+
+# Object Property: univ:hasResearchInterest (univ:hasResearchInterest)
+
+InverseObjectProperties(univ:hasResearchInterest univ:researchInterestOf)
+ObjectPropertyDomain(univ:hasResearchInterest univ:Person)
+ObjectPropertyRange(univ:hasResearchInterest univ:Research_Interest)
+
+# Object Property: univ:hasSupervisor (univ:hasSupervisor)
+
+InverseObjectProperties(univ:hasSupervisor univ:supervisorOf)
+ObjectPropertyDomain(univ:hasSupervisor univ:Student)
+ObjectPropertyRange(univ:hasSupervisor univ:Teacher)
+
+# Object Property: univ:listedCourse (univ:listedCourse)
+
+ObjectPropertyDomain(univ:listedCourse univ:Centre)
+ObjectPropertyRange(univ:listedCourse univ:Course_Name)
+
+# Object Property: univ:pgStudent (univ:pgStudent)
+
+ObjectPropertyDomain(univ:pgStudent univ:Postgraduate_Student)
+ObjectPropertyRange(univ:pgStudent univ:Postgraduate_Course)
+
+# Object Property: univ:projectAssistantOf (univ:projectAssistantOf)
+
+ObjectPropertyDomain(univ:projectAssistantOf univ:ProjectAssistant)
+ObjectPropertyRange(univ:projectAssistantOf univ:Project)
+
+# Object Property: univ:researchArea (univ:researchArea)
+
+ObjectPropertyDomain(univ:researchArea univ:Person)
+ObjectPropertyRange(univ:researchArea univ:Research_Topic)
+
+# Object Property: univ:researchInterestOf (univ:researchInterestOf)
+
+ObjectPropertyDomain(univ:researchInterestOf univ:Research_Interest)
+ObjectPropertyRange(univ:researchInterestOf univ:Person)
+
+# Object Property: univ:supervisorOf (univ:supervisorOf)
+
+ObjectPropertyDomain(univ:supervisorOf univ:Teacher)
+ObjectPropertyRange(univ:supervisorOf univ:Student)
+
+# Object Property: univ:ugStudent (univ:ugStudent)
+
+ObjectPropertyDomain(univ:ugStudent univ:Undergraduate_Student)
+ObjectPropertyRange(univ:ugStudent univ:Undergraduate_Course)
+
+# Object Property: univ:unitHead (univ:unitHead)
+
+ObjectPropertyDomain(univ:unitHead univ:Unit)
+ObjectPropertyRange(univ:unitHead univ:Teacher)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: univ:ZIP (univ:ZIP)
+
+DataPropertyDomain(univ:ZIP univ:Person)
+DataPropertyRange(univ:ZIP xsd:string)
+
+# Data Property: univ:age (univ:age)
+
+DataPropertyDomain(univ:age univ:Person)
+DataPropertyRange(univ:age xsd:int)
+
+# Data Property: univ:award (Award)
+
+AnnotationAssertion(rdfs:comment univ:award "Award received by a person"^^xsd:string)
+AnnotationAssertion(rdfs:label univ:award "Award"^^xsd:string)
+DataPropertyDomain(univ:award univ:Person)
+DataPropertyRange(univ:award xsd:string)
+
+# Data Property: univ:basicSalary (univ:basicSalary)
+
+DataPropertyDomain(univ:basicSalary ObjectUnionOf(univ:AdministrativeStaff univ:Teacher))
+DataPropertyRange(univ:basicSalary xsd:string)
+
+# Data Property: univ:city (univ:city)
+
+DataPropertyDomain(univ:city univ:Person)
+DataPropertyRange(univ:city xsd:string)
+
+# Data Property: univ:country (univ:country)
+
+DataPropertyDomain(univ:country univ:Person)
+DataPropertyRange(univ:country xsd:string)
+
+# Data Property: univ:dateOfBirth (univ:dateOfBirth)
+
+DataPropertyDomain(univ:dateOfBirth univ:Person)
+DataPropertyRange(univ:dateOfBirth xsd:date)
+
+# Data Property: univ:email (univ:email)
+
+DataPropertyDomain(univ:email univ:Person)
+DataPropertyRange(univ:email xsd:string)
+
+# Data Property: univ:eventsAttended (Events Attended)
+
+AnnotationAssertion(rdfs:comment univ:eventsAttended "A person attended national and internatinal events, for example, Seminars, Conferences, Symposiums, Workshops, etc."^^xsd:string)
+AnnotationAssertion(rdfs:label univ:eventsAttended "Events Attended"^^xsd:string)
+DataPropertyDomain(univ:eventsAttended univ:Person)
+DataPropertyRange(univ:eventsAttended xsd:string)
+
+# Data Property: univ:firstName (First Name)
+
+AnnotationAssertion(rdfs:label univ:firstName "First Name"^^xsd:string)
+DataPropertyDomain(univ:firstName univ:Person)
+DataPropertyRange(univ:firstName xsd:string)
+
+# Data Property: univ:grossSalary (univ:grossSalary)
+
+DataPropertyDomain(univ:grossSalary ObjectUnionOf(univ:AdministrativeStaff univ:Teacher))
+DataPropertyRange(univ:grossSalary xsd:string)
+
+# Data Property: univ:hasProjectDuration (univ:hasProjectDuration)
+
+DataPropertyRange(univ:hasProjectDuration xsd:int)
+
+# Data Property: univ:hasTeachingExperience (univ:hasTeachingExperience)
+
+DataPropertyDomain(univ:hasTeachingExperience univ:Teacher)
+DataPropertyRange(univ:hasTeachingExperience xsd:integer)
+
+# Data Property: univ:heldOn (univ:heldOn)
+
+AnnotationAssertion(rdfs:comment univ:heldOn "The conference, seminar, symposium or workshop held on the year"^^xsd:string)
+DataPropertyDomain(univ:heldOn univ:Events)
+DataPropertyRange(univ:heldOn xsd:string)
+
+# Data Property: univ:homepage (univ:homepage)
+
+DataPropertyDomain(univ:homepage univ:Person)
+DataPropertyRange(univ:homepage xsd:anyURI)
+
+# Data Property: univ:lastName (univ:lastName)
+
+DataPropertyDomain(univ:lastName univ:Person)
+DataPropertyRange(univ:lastName xsd:string)
+
+# Data Property: univ:phoneNo (univ:phoneNo)
+
+DataPropertyDomain(univ:phoneNo univ:Person)
+DataPropertyRange(univ:phoneNo xsd:string)
+
+# Data Property: univ:projectEnds (univ:projectEnds)
+
+DataPropertyDomain(univ:projectEnds univ:Project)
+DataPropertyRange(univ:projectEnds xsd:date)
+
+# Data Property: univ:projectStarted (univ:projectStarted)
+
+DataPropertyDomain(univ:projectStarted univ:Project)
+DataPropertyRange(univ:projectStarted xsd:date)
+
+# Data Property: univ:publicationDate (univ:publicationDate)
+
+DataPropertyDomain(univ:publicationDate univ:Publication)
+DataPropertyRange(univ:publicationDate xsd:date)
+
+# Data Property: univ:resourcePersonOf (univ:resourcePersonOf)
+
+AnnotationAssertion(rdfs:comment univ:resourcePersonOf "A person being invited as a resource person to deliver lectures, etc."^^xsd:string)
+DataPropertyDomain(univ:resourcePersonOf univ:Person)
+DataPropertyRange(univ:resourcePersonOf xsd:string)
+
+# Data Property: univ:rollNo (Roll Number)
+
+AnnotationAssertion(rdfs:comment univ:rollNo "Institutional Roll Number of a person"^^xsd:string)
+AnnotationAssertion(rdfs:label univ:rollNo "Roll Number"^^xsd:string)
+DataPropertyDomain(univ:rollNo univ:Person)
+DataPropertyRange(univ:rollNo xsd:string)
+
+# Data Property: univ:state (univ:state)
+
+DataPropertyDomain(univ:state univ:Person)
+DataPropertyRange(univ:state xsd:string)
+
+# Data Property: univ:topicOf (univ:topicOf)
+
+AnnotationAssertion(rdfs:comment univ:topicOf "The topic of the conference, symposium, seminar or workshop"^^xsd:string)
+DataPropertyDomain(univ:topicOf univ:Events)
+DataPropertyRange(univ:topicOf xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: univ:ADIS (univ:ADIS)
+
+AnnotationAssertion(rdfs:comment univ:ADIS "This course is equivalent to MLISc degree"^^xsd:string)
+SubClassOf(univ:ADIS univ:Postgraduate_Course)
+DisjointClasses(univ:ADIS univ:MMath)
+DisjointClasses(univ:ADIS univ:MStat)
+
+# Class: univ:AdministrativeStaff (univ:AdministrativeStaff)
+
+SubClassOf(univ:AdministrativeStaff univ:Person)
+DisjointClasses(univ:AdministrativeStaff univ:Assistant)
+DisjointClasses(univ:AdministrativeStaff univ:Student)
+DisjointClasses(univ:AdministrativeStaff univ:Teacher)
+
+# Class: univ:Article (univ:Article)
+
+SubClassOf(univ:Article univ:Publication)
+DisjointClasses(univ:Article univ:Book)
+DisjointClasses(univ:Article univ:Periodical)
+DisjointClasses(univ:Article univ:Proceedings)
+DisjointClasses(univ:Article univ:Thesis)
+
+# Class: univ:Assistant (univ:Assistant)
+
+SubClassOf(univ:Assistant univ:Person)
+DisjointClasses(univ:Assistant univ:Student)
+DisjointClasses(univ:Assistant univ:Teacher)
+
+# Class: univ:Assistant_professor (univ:Assistant_professor)
+
+SubClassOf(univ:Assistant_professor univ:Teacher)
+DisjointClasses(univ:Assistant_professor univ:Associate_Professor)
+DisjointClasses(univ:Assistant_professor univ:Professor)
+
+# Class: univ:Associate_Professor (univ:Associate_Professor)
+
+SubClassOf(univ:Associate_Professor univ:Teacher)
+DisjointClasses(univ:Associate_Professor univ:Professor)
+
+# Class: univ:BMath (univ:BMath)
+
+SubClassOf(univ:BMath univ:Undergraduate_Course)
+DisjointClasses(univ:BMath univ:BStat)
+
+# Class: univ:BStat (univ:BStat)
+
+SubClassOf(univ:BStat univ:Undergraduate_Course)
+
+# Class: univ:Book (univ:Book)
+
+SubClassOf(univ:Book univ:Publication)
+DisjointClasses(univ:Book univ:Periodical)
+DisjointClasses(univ:Book univ:Proceedings)
+DisjointClasses(univ:Book univ:Thesis)
+
+# Class: univ:BookArticle (univ:BookArticle)
+
+SubClassOf(univ:BookArticle univ:Article)
+DisjointClasses(univ:BookArticle univ:ConferenceArticle)
+DisjointClasses(univ:BookArticle univ:JournalArticle)
+DisjointClasses(univ:BookArticle univ:WorkshopArticle)
+
+# Class: univ:Centre (univ:Centre)
+
+SubClassOf(univ:Centre owl:Thing)
+SubClassOf(univ:Centre ObjectSomeValuesFrom(univ:listedCourse univ:Course_Name))
+
+# Class: univ:Conference (univ:Conference)
+
+SubClassOf(univ:Conference univ:Events)
+DisjointClasses(univ:Conference univ:Workshop)
+
+# Class: univ:ConferenceArticle (univ:ConferenceArticle)
+
+SubClassOf(univ:ConferenceArticle univ:Article)
+DisjointClasses(univ:ConferenceArticle univ:JournalArticle)
+DisjointClasses(univ:ConferenceArticle univ:WorkshopArticle)
+
+# Class: univ:Director (univ:Director)
+
+SubClassOf(univ:Director univ:AdministrativeStaff)
+
+# Class: univ:DoctoralThesis (univ:DoctoralThesis)
+
+SubClassOf(univ:DoctoralThesis univ:Thesis)
+DisjointClasses(univ:DoctoralThesis univ:MastersThesis)
+
+# Class: univ:Gender (univ:Gender)
+
+AnnotationAssertion(rdfs:comment univ:Gender "Programes offered by the Institute"^^xsd:string)
+
+# Class: univ:Journal (univ:Journal)
+
+SubClassOf(univ:Journal univ:Periodical)
+DisjointClasses(univ:Journal univ:Magazine)
+
+# Class: univ:JournalArticle (univ:JournalArticle)
+
+SubClassOf(univ:JournalArticle univ:Article)
+DisjointClasses(univ:JournalArticle univ:WorkshopArticle)
+
+# Class: univ:Junior_Research_Student (univ:Junior_Research_Student)
+
+SubClassOf(univ:Junior_Research_Student univ:Research_Student)
+DisjointClasses(univ:Junior_Research_Student univ:Senior_Research_Student)
+
+# Class: univ:MMath (univ:MMath)
+
+SubClassOf(univ:MMath univ:Postgraduate_Course)
+DisjointClasses(univ:MMath univ:MStat)
+
+# Class: univ:MStat (univ:MStat)
+
+SubClassOf(univ:MStat univ:Postgraduate_Course)
+
+# Class: univ:Magazine (univ:Magazine)
+
+SubClassOf(univ:Magazine univ:Periodical)
+
+# Class: univ:MastersThesis (univ:MastersThesis)
+
+SubClassOf(univ:MastersThesis univ:Thesis)
+
+# Class: univ:Periodical (univ:Periodical)
+
+SubClassOf(univ:Periodical univ:Publication)
+DisjointClasses(univ:Periodical univ:Proceedings)
+DisjointClasses(univ:Periodical univ:Thesis)
+
+# Class: univ:Person (univ:Person)
+
+SubClassOf(univ:Person owl:Thing)
+SubClassOf(univ:Person ObjectSomeValuesFrom(univ:hasAffiliation univ:Unit))
+SubClassOf(univ:Person ObjectExactCardinality(1 univ:belongsToCentre univ:Centre))
+SubClassOf(univ:Person ObjectExactCardinality(1 univ:hasGender univ:Gender))
+
+# Class: univ:PhD_Programme (univ:PhD_Programme)
+
+SubClassOf(univ:PhD_Programme univ:Course_Name)
+DisjointClasses(univ:PhD_Programme univ:PostDoc_Programme)
+DisjointClasses(univ:PhD_Programme univ:Postgraduate_Course)
+DisjointClasses(univ:PhD_Programme univ:Undergraduate_Course)
+
+# Class: univ:PostDoc_Programme (Post Doctoral Programme)
+
+AnnotationAssertion(rdfs:label univ:PostDoc_Programme "Post Doctoral Programme"^^xsd:string)
+SubClassOf(univ:PostDoc_Programme univ:Course_Name)
+DisjointClasses(univ:PostDoc_Programme univ:Postgraduate_Course)
+DisjointClasses(univ:PostDoc_Programme univ:Undergraduate_Course)
+
+# Class: univ:Postgraduate_Course (univ:Postgraduate_Course)
+
+SubClassOf(univ:Postgraduate_Course univ:Course_Name)
+DisjointClasses(univ:Postgraduate_Course univ:Undergraduate_Course)
+
+# Class: univ:Postgraduate_Student (univ:Postgraduate_Student)
+
+SubClassOf(univ:Postgraduate_Student univ:Student)
+SubClassOf(univ:Postgraduate_Student ObjectSomeValuesFrom(univ:pgStudent univ:Postgraduate_Course))
+DisjointClasses(univ:Postgraduate_Student univ:Research_Student)
+DisjointClasses(univ:Postgraduate_Student univ:Undergraduate_Student)
+
+# Class: univ:Proceedings (univ:Proceedings)
+
+SubClassOf(univ:Proceedings univ:Publication)
+DisjointClasses(univ:Proceedings univ:Thesis)
+
+# Class: univ:Professor (univ:Professor)
+
+SubClassOf(univ:Professor univ:Teacher)
+
+# Class: univ:Project (univ:Project)
+
+AnnotationAssertion(rdfs:comment univ:Project "List of on going or finished projects"^^xsd:string)
+SubClassOf(univ:Project owl:Thing)
+SubClassOf(univ:Project DataMaxCardinality(36 univ:hasProjectDuration))
+
+# Class: univ:ProjectAssistant (univ:ProjectAssistant)
+
+SubClassOf(univ:ProjectAssistant univ:Assistant)
+
+# Class: univ:Publication (univ:Publication)
+
+SubClassOf(univ:Publication owl:Thing)
+SubClassOf(univ:Publication ObjectSomeValuesFrom(univ:hasAuthor univ:Person))
+
+# Class: univ:Research_Interest (univ:Research_Interest)
+
+SubClassOf(univ:Research_Interest univ:Research)
+SubClassOf(univ:Research_Interest ObjectSomeValuesFrom(univ:researchInterestOf univ:Person))
+
+# Class: univ:Research_Student (univ:Research_Student)
+
+SubClassOf(univ:Research_Student univ:Student)
+SubClassOf(univ:Research_Student ObjectSomeValuesFrom(univ:hasResearchInterest univ:Research_Interest))
+DisjointClasses(univ:Research_Student univ:Undergraduate_Student)
+
+# Class: univ:Research_Topic (univ:Research_Topic)
+
+AnnotationAssertion(rdfs:comment univ:Research_Topic "<b>Research topic</b> refers to the core area in which some one has done 
+    or doing research for his/her PhD degree"@en)
+SubClassOf(univ:Research_Topic univ:Research)
+
+# Class: univ:Senior_Research_Student (univ:Senior_Research_Student)
+
+SubClassOf(univ:Senior_Research_Student univ:Research_Student)
+
+# Class: univ:Student (univ:Student)
+
+SubClassOf(univ:Student univ:Person)
+DisjointClasses(univ:Student univ:Teacher)
+
+# Class: univ:Teacher (univ:Teacher)
+
+SubClassOf(univ:Teacher univ:Person)
+SubClassOf(univ:Teacher ObjectSomeValuesFrom(univ:hasResearchInterest univ:Research_Interest))
+SubClassOf(univ:Teacher ObjectHasValue(univ:hasQualification univ:PhD))
+
+# Class: univ:Thesis (univ:Thesis)
+
+SubClassOf(univ:Thesis univ:Publication)
+
+# Class: univ:Undergraduate_Course (univ:Undergraduate_Course)
+
+SubClassOf(univ:Undergraduate_Course univ:Course_Name)
+
+# Class: univ:Undergraduate_Student (univ:Undergraduate_Student)
+
+SubClassOf(univ:Undergraduate_Student univ:Student)
+SubClassOf(univ:Undergraduate_Student ObjectSomeValuesFrom(univ:ugStudent univ:Undergraduate_Course))
+
+# Class: univ:Workshop (univ:Workshop)
+
+SubClassOf(univ:Workshop univ:Events)
+
+# Class: univ:WorkshopArticle (univ:WorkshopArticle)
+
+SubClassOf(univ:WorkshopArticle univ:Article)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: univ:A.R.D._Prasad (univ:A.R.D._Prasad)
+
+ClassAssertion(univ:Associate_Professor univ:A.R.D._Prasad)
+ObjectPropertyAssertion(univ:belongsToCentre univ:A.R.D._Prasad univ:ISIBC)
+ObjectPropertyAssertion(univ:editorOfEvents univ:A.R.D._Prasad univ:DL2005)
+ObjectPropertyAssertion(univ:editorOfEvents univ:A.R.D._Prasad univ:ICSD2007)
+ObjectPropertyAssertion(univ:hasAffiliation univ:A.R.D._Prasad univ:DRTC)
+ObjectPropertyAssertion(univ:hasGender univ:A.R.D._Prasad univ:male)
+ObjectPropertyAssertion(univ:hasQualification univ:A.R.D._Prasad univ:MLISc)
+ObjectPropertyAssertion(univ:hasQualification univ:A.R.D._Prasad univ:MPhil)
+ObjectPropertyAssertion(univ:hasResearchInterest univ:A.R.D._Prasad univ:AI)
+ObjectPropertyAssertion(univ:hasResearchInterest univ:A.R.D._Prasad univ:Digital_library)
+ObjectPropertyAssertion(univ:hasResearchInterest univ:A.R.D._Prasad univ:NLP)
+ObjectPropertyAssertion(univ:hasResearchInterest univ:A.R.D._Prasad univ:Ontology)
+ObjectPropertyAssertion(univ:supervisorOf univ:A.R.D._Prasad univ:Biswanath_Dutta)
+ObjectPropertyAssertion(univ:supervisorOf univ:A.R.D._Prasad univ:Nabonita_Guha)
+ObjectPropertyAssertion(univ:supervisorOf univ:A.R.D._Prasad univ:Sanjeev_Kumar_Sunny)
+DataPropertyAssertion(univ:age univ:A.R.D._Prasad "57"^^xsd:int)
+DataPropertyAssertion(univ:city univ:A.R.D._Prasad "Bangalore"^^xsd:string)
+DataPropertyAssertion(univ:country univ:A.R.D._Prasad "India"^^xsd:string)
+DataPropertyAssertion(univ:email univ:A.R.D._Prasad "ard@drtc.isibang.ac.in"^^xsd:string)
+DataPropertyAssertion(univ:firstName univ:A.R.D._Prasad "ARD"^^xsd:string)
+DataPropertyAssertion(univ:hasTeachingExperience univ:A.R.D._Prasad "10"^^xsd:integer)
+DataPropertyAssertion(univ:homepage univ:A.R.D._Prasad "http://drtc.isibang.ac.in/~ard"^^xsd:anyURI)
+DataPropertyAssertion(univ:lastName univ:A.R.D._Prasad "Prasad"^^xsd:string)
+DataPropertyAssertion(univ:rollNo univ:A.R.D._Prasad "ASSP039"^^xsd:string)
+
+# Individual: univ:ADIS_1st_year (univ:ADIS_1st_year)
+
+ClassAssertion(univ:ADIS univ:ADIS_1st_year)
+
+# Individual: univ:ADIS_2nd_year (univ:ADIS_2nd_year)
+
+ClassAssertion(univ:ADIS univ:ADIS_2nd_year)
+
+# Individual: univ:AI (univ:AI)
+
+ClassAssertion(univ:Research_Interest univ:AI)
+ObjectPropertyAssertion(univ:researchInterestOf univ:AI univ:A.R.D._Prasad)
+
+# Individual: univ:Agrometry (univ:Agrometry)
+
+ClassAssertion(univ:Research_Interest univ:Agrometry)
+ObjectPropertyAssertion(univ:researchInterestOf univ:Agrometry univ:SS_Panza)
+
+# Individual: univ:Anand_Kumar_Pandey (univ:Anand_Kumar_Pandey)
+
+ClassAssertion(univ:Junior_Research_Student univ:Anand_Kumar_Pandey)
+ObjectPropertyAssertion(univ:belongsToCentre univ:Anand_Kumar_Pandey univ:ISIBC)
+ObjectPropertyAssertion(univ:hasAffiliation univ:Anand_Kumar_Pandey univ:DRTC)
+ObjectPropertyAssertion(univ:hasDiscipline univ:Anand_Kumar_Pandey univ:Library_and_Information_Science)
+ObjectPropertyAssertion(univ:hasGender univ:Anand_Kumar_Pandey univ:male)
+ObjectPropertyAssertion(univ:hasQualification univ:Anand_Kumar_Pandey univ:BCom)
+ObjectPropertyAssertion(univ:hasQualification univ:Anand_Kumar_Pandey univ:MLISc)
+ObjectPropertyAssertion(univ:hasResearchInterest univ:Anand_Kumar_Pandey univ:Digital_library)
+ObjectPropertyAssertion(univ:hasSupervisor univ:Anand_Kumar_Pandey univ:Devika_P_Madalli)
+DataPropertyAssertion(univ:city univ:Anand_Kumar_Pandey "Beneras"^^xsd:string)
+DataPropertyAssertion(univ:email univ:Anand_Kumar_Pandey "anand@drtc.isibang.ac.in"^^xsd:string)
+DataPropertyAssertion(univ:firstName univ:Anand_Kumar_Pandey "Anand"^^xsd:string)
+DataPropertyAssertion(univ:homepage univ:Anand_Kumar_Pandey "http://drtc.isibang.ac.in/~anand"^^xsd:anyURI)
+DataPropertyAssertion(univ:lastName univ:Anand_Kumar_Pandey "Pandey"^^xsd:string)
+DataPropertyAssertion(univ:rollNo univ:Anand_Kumar_Pandey "RS075"^^xsd:string)
+
+# Individual: univ:Anthropology (univ:Anthropology)
+
+ClassAssertion(univ:Discipline univ:Anthropology)
+
+# Individual: univ:Automatic_classification (univ:Automatic_classification)
+
+ClassAssertion(univ:Research_Interest univ:Automatic_classification)
+ObjectPropertyAssertion(univ:researchInterestOf univ:Automatic_classification univ:Devika_P_Madalli)
+
+# Individual: univ:BA (univ:BA)
+
+ClassAssertion(univ:Qualification univ:BA)
+
+# Individual: univ:BCom (univ:BCom)
+
+ClassAssertion(univ:Qualification univ:BCom)
+
+# Individual: univ:BMath_1st_year (univ:BMath_1st_year)
+
+ClassAssertion(univ:BMath univ:BMath_1st_year)
+
+# Individual: univ:BMath_2nd_year (univ:BMath_2nd_year)
+
+ClassAssertion(univ:BMath univ:BMath_2nd_year)
+
+# Individual: univ:BMath_3rd_year (univ:BMath_3rd_year)
+
+ClassAssertion(univ:BMath univ:BMath_3rd_year)
+
+# Individual: univ:BSc (univ:BSc)
+
+ClassAssertion(univ:Qualification univ:BSc)
+
+# Individual: univ:BStat_1st_year (univ:BStat_1st_year)
+
+ClassAssertion(univ:BStat univ:BStat_1st_year)
+
+# Individual: univ:BStat_2nd_year (univ:BStat_2nd_year)
+
+ClassAssertion(univ:BStat univ:BStat_2nd_year)
+
+# Individual: univ:BStat_3rd_year (univ:BStat_3rd_year)
+
+ClassAssertion(univ:BStat univ:BStat_3rd_year)
+
+# Individual: univ:Bibliometrics (univ:Bibliometrics)
+
+ClassAssertion(univ:Research_Interest univ:Bibliometrics)
+ObjectPropertyAssertion(univ:researchInterestOf univ:Bibliometrics univ:I.K._Ravichandra_Rao)
+
+# Individual: univ:Biswanath_Dutta (univ:Biswanath_Dutta)
+
+ClassAssertion(univ:Senior_Research_Student univ:Biswanath_Dutta)
+ObjectPropertyAssertion(univ:belongsToCentre univ:Biswanath_Dutta univ:ISIBC)
+ObjectPropertyAssertion(univ:hasAffiliation univ:Biswanath_Dutta univ:DRTC)
+ObjectPropertyAssertion(univ:hasDiscipline univ:Biswanath_Dutta univ:Library_and_Information_Science)
+ObjectPropertyAssertion(univ:hasGender univ:Biswanath_Dutta univ:male)
+ObjectPropertyAssertion(univ:hasQualification univ:Biswanath_Dutta univ:BSc)
+ObjectPropertyAssertion(univ:hasQualification univ:Biswanath_Dutta univ:MLISc)
+ObjectPropertyAssertion(univ:hasResearchInterest univ:Biswanath_Dutta univ:Ontology)
+ObjectPropertyAssertion(univ:hasResearchInterest univ:Biswanath_Dutta univ:SWS)
+ObjectPropertyAssertion(univ:hasSupervisor univ:Biswanath_Dutta univ:A.R.D._Prasad)
+ObjectPropertyAssertion(univ:researchArea univ:Biswanath_Dutta univ:Semantic_Web_based_e-Government_services)
+DataPropertyAssertion(univ:city univ:Biswanath_Dutta "Kolkata"^^xsd:string)
+DataPropertyAssertion(univ:country univ:Biswanath_Dutta "India"^^xsd:string)
+DataPropertyAssertion(univ:email univ:Biswanath_Dutta "bisu@drtc.isibang.ac.in"^^xsd:string)
+DataPropertyAssertion(univ:firstName univ:Biswanath_Dutta "Biswanath"^^xsd:string)
+DataPropertyAssertion(univ:homepage univ:Biswanath_Dutta "http://drtc.isibang.ac.in/~bisu"^^xsd:anyURI)
+DataPropertyAssertion(univ:lastName univ:Biswanath_Dutta "Dutta"^^xsd:string)
+DataPropertyAssertion(univ:rollNo univ:Biswanath_Dutta "RS039"^^xsd:string)
+
+# Individual: univ:Commerce (univ:Commerce)
+
+ClassAssertion(univ:Discipline univ:Commerce)
+
+# Individual: univ:Computer_Science (univ:Computer_Science)
+
+ClassAssertion(univ:Discipline univ:Computer_Science)
+
+# Individual: univ:DL2005 (univ:DL2005)
+
+ClassAssertion(univ:Workshop univ:DL2005)
+ObjectPropertyAssertion(univ:eventsEditor univ:DL2005 univ:A.R.D._Prasad)
+DataPropertyAssertion(univ:heldOn univ:DL2005 "21-24 Mar 2004"^^xsd:string)
+DataPropertyAssertion(univ:topicOf univ:DL2005 "Workshop on Digital Libraries"^^xsd:string)
+
+# Individual: univ:DRTC (univ:DRTC)
+
+ClassAssertion(univ:Unit univ:DRTC)
+ObjectPropertyAssertion(univ:affiliationOf univ:DRTC univ:Manju_M)
+
+# Individual: univ:Data_mining (univ:Data_mining)
+
+ClassAssertion(univ:Research_Interest univ:Data_mining)
+ObjectPropertyAssertion(univ:researchInterestOf univ:Data_mining univ:I.K._Ravichandra_Rao)
+
+# Individual: univ:Devika_P_Madalli (univ:Devika_P_Madalli)
+
+ClassAssertion(univ:Assistant_professor univ:Devika_P_Madalli)
+ObjectPropertyAssertion(univ:belongsToCentre univ:Devika_P_Madalli univ:ISIBC)
+ObjectPropertyAssertion(univ:editorOfEvents univ:Devika_P_Madalli univ:ICT2006)
+ObjectPropertyAssertion(univ:editorOfEvents univ:Devika_P_Madalli univ:NC2005)
+ObjectPropertyAssertion(univ:hasAffiliation univ:Devika_P_Madalli univ:DRTC)
+ObjectPropertyAssertion(univ:hasGender univ:Devika_P_Madalli univ:female)
+ObjectPropertyAssertion(univ:hasResearchInterest univ:Devika_P_Madalli univ:Automatic_classification)
+ObjectPropertyAssertion(univ:hasResearchInterest univ:Devika_P_Madalli univ:Ontology)
+ObjectPropertyAssertion(univ:supervisorOf univ:Devika_P_Madalli univ:Anand_Kumar_Pandey)
+ObjectPropertyAssertion(univ:supervisorOf univ:Devika_P_Madalli univ:Mithun_Raj_M)
+DataPropertyAssertion(univ:age univ:Devika_P_Madalli "47"^^xsd:int)
+DataPropertyAssertion(univ:city univ:Devika_P_Madalli "Bangalore"^^xsd:string)
+DataPropertyAssertion(univ:email univ:Devika_P_Madalli "devika@drtc.isibang.ac.in"^^xsd:string)
+DataPropertyAssertion(univ:firstName univ:Devika_P_Madalli "Devika P."^^xsd:string)
+DataPropertyAssertion(univ:hasTeachingExperience univ:Devika_P_Madalli "5"^^xsd:integer)
+DataPropertyAssertion(univ:homepage univ:Devika_P_Madalli "http://drtc.isibang.ac.in/~devika"^^xsd:anyURI)
+DataPropertyAssertion(univ:lastName univ:Devika_P_Madalli "Madalli"^^xsd:string)
+DataPropertyAssertion(univ:rollNo univ:Devika_P_Madalli "Lec003"^^xsd:string)
+
+# Individual: univ:Digital_Library (Digital Library)
+
+AnnotationAssertion(rdfs:comment univ:Digital_Library ""^^xsd:string)
+AnnotationAssertion(rdfs:label univ:Digital_Library "Digital Library"^^xsd:string)
+ClassAssertion(univ:Project univ:Digital_Library)
+ObjectPropertyAssertion(univ:hasPrincipalInvestigator univ:Digital_Library univ:Devika_P_Madalli)
+DataPropertyAssertion(univ:hasProjectDuration univ:Digital_Library "47"^^xsd:int)
+DataPropertyAssertion(univ:projectStarted univ:Digital_Library "2006-03-02"^^xsd:date)
+
+# Individual: univ:Digital_library (univ:Digital_library)
+
+ClassAssertion(univ:Research_Interest univ:Digital_library)
+ObjectPropertyAssertion(univ:researchInterestOf univ:Digital_library univ:A.R.D._Prasad)
+ObjectPropertyAssertion(univ:researchInterestOf univ:Digital_library univ:Vinit_Kumar)
+
+# Individual: univ:EMU (univ:EMU)
+
+ClassAssertion(univ:Unit univ:EMU)
+ObjectPropertyAssertion(univ:affiliationOf univ:EMU univ:SS_Panza)
+
+# Individual: univ:Faceted_ontology (univ:Faceted_ontology)
+
+ClassAssertion(univ:Research_Topic univ:Faceted_ontology)
+
+# Individual: univ:Geometry (univ:Geometry)
+
+ClassAssertion(univ:Research_Interest univ:Geometry)
+ObjectPropertyAssertion(univ:researchInterestOf univ:Geometry univ:TSSK_Rao)
+
+# Individual: univ:HigherSecondary (univ:HigherSecondary)
+
+ClassAssertion(univ:Qualification univ:HigherSecondary)
+
+# Individual: univ:History (univ:History)
+
+ClassAssertion(univ:Discipline univ:History)
+
+# Individual: univ:I.K._Ravichandra_Rao (univ:I.K._Ravichandra_Rao)
+
+ClassAssertion(univ:Professor univ:I.K._Ravichandra_Rao)
+ObjectPropertyAssertion(univ:belongsToCentre univ:I.K._Ravichandra_Rao univ:ISIBC)
+ObjectPropertyAssertion(univ:hasAffiliation univ:I.K._Ravichandra_Rao univ:DRTC)
+ObjectPropertyAssertion(univ:hasGender univ:I.K._Ravichandra_Rao univ:male)
+ObjectPropertyAssertion(univ:hasResearchInterest univ:I.K._Ravichandra_Rao univ:Bibliometrics)
+ObjectPropertyAssertion(univ:hasResearchInterest univ:I.K._Ravichandra_Rao univ:Data_mining)
+ObjectPropertyAssertion(univ:researchArea univ:I.K._Ravichandra_Rao univ:Quantitative_analysis)
+DataPropertyAssertion(univ:age univ:I.K._Ravichandra_Rao "65"^^xsd:int)
+DataPropertyAssertion(univ:city univ:I.K._Ravichandra_Rao "Mangalore"^^xsd:string)
+DataPropertyAssertion(univ:email univ:I.K._Ravichandra_Rao "akr@drtc.isibang.ac.in"^^xsd:string)
+DataPropertyAssertion(univ:firstName univ:I.K._Ravichandra_Rao "IK Ravichandra"^^xsd:string)
+DataPropertyAssertion(univ:hasTeachingExperience univ:I.K._Ravichandra_Rao "17"^^xsd:integer)
+DataPropertyAssertion(univ:homepage univ:I.K._Ravichandra_Rao "http://drtc.isibang.ac.in/~ikr"^^xsd:anyURI)
+DataPropertyAssertion(univ:lastName univ:I.K._Ravichandra_Rao "Rao"^^xsd:string)
+DataPropertyAssertion(univ:rollNo univ:I.K._Ravichandra_Rao "Prof003"^^xsd:string)
+
+# Individual: univ:ICSD2007 (International Conference on Semantic Web and Digital Libraries)
+
+AnnotationAssertion(rdfs:label univ:ICSD2007 "International Conference on Semantic Web and Digital Libraries"^^xsd:string)
+ClassAssertion(univ:Conference univ:ICSD2007)
+ObjectPropertyAssertion(univ:eventsEditor univ:ICSD2007 univ:A.R.D._Prasad)
+DataPropertyAssertion(univ:heldOn univ:ICSD2007 "21-23 Feb 2007"^^xsd:string)
+DataPropertyAssertion(univ:topicOf univ:ICSD2007 "International Conference on Semantic Web and Digital Libraries"^^xsd:string)
+
+# Individual: univ:ICT2006 (univ:ICT2006)
+
+ClassAssertion(univ:Conference univ:ICT2006)
+ObjectPropertyAssertion(univ:eventsEditor univ:ICT2006 univ:Devika_P_Madalli)
+DataPropertyAssertion(univ:heldOn univ:ICT2006 "11-14 Mar 2006"^^xsd:string)
+DataPropertyAssertion(univ:topicOf univ:ICT2006 "National Conference on Information Communication and Technology"^^xsd:string)
+
+# Individual: univ:ISIBC (univ:ISIBC)
+
+ClassAssertion(univ:Centre univ:ISIBC)
+ObjectPropertyAssertion(univ:centretHead univ:ISIBC univ:TSSK_Rao)
+ObjectPropertyAssertion(univ:listedCourse univ:ISIBC univ:ADIS_1st_year)
+ObjectPropertyAssertion(univ:listedCourse univ:ISIBC univ:ADIS_2nd_year)
+ObjectPropertyAssertion(univ:listedCourse univ:ISIBC univ:BMath_1st_year)
+ObjectPropertyAssertion(univ:listedCourse univ:ISIBC univ:BMath_2nd_year)
+ObjectPropertyAssertion(univ:listedCourse univ:ISIBC univ:BMath_3rd_year)
+ObjectPropertyAssertion(univ:listedCourse univ:ISIBC univ:MMath_1st_year)
+ObjectPropertyAssertion(univ:listedCourse univ:ISIBC univ:MMath_2nd_year)
+
+# Individual: univ:ISICC (univ:ISICC)
+
+ClassAssertion(univ:Centre univ:ISICC)
+ObjectPropertyAssertion(univ:centretHead univ:ISICC univ:SS_Panza)
+ObjectPropertyAssertion(univ:listedCourse univ:ISICC univ:BStat_1st_year)
+ObjectPropertyAssertion(univ:listedCourse univ:ISICC univ:BStat_2nd_year)
+ObjectPropertyAssertion(univ:listedCourse univ:ISICC univ:BStat_3rd_year)
+
+# Individual: univ:ISIDC (univ:ISIDC)
+
+ClassAssertion(univ:Centre univ:ISIDC)
+
+# Individual: univ:KS_Raghavan (univ:KS_Raghavan)
+
+ClassAssertion(univ:Professor univ:KS_Raghavan)
+ObjectPropertyAssertion(univ:belongsToCentre univ:KS_Raghavan univ:ISIBC)
+ObjectPropertyAssertion(univ:hasAffiliation univ:KS_Raghavan univ:DRTC)
+ObjectPropertyAssertion(univ:hasGender univ:KS_Raghavan univ:male)
+ObjectPropertyAssertion(univ:hasResearchInterest univ:KS_Raghavan univ:Knowledge_Management)
+ObjectPropertyAssertion(univ:supervisorOf univ:KS_Raghavan univ:Radharani_Rit)
+DataPropertyAssertion(univ:city univ:KS_Raghavan "Bangalore"^^xsd:string)
+DataPropertyAssertion(univ:dateOfBirth univ:KS_Raghavan "2007-11-24"^^xsd:date)
+DataPropertyAssertion(univ:email univ:KS_Raghavan "ksraghavan@drtc.isibang.ac.in"^^xsd:string)
+DataPropertyAssertion(univ:firstName univ:KS_Raghavan "KS"^^xsd:string)
+DataPropertyAssertion(univ:hasTeachingExperience univ:KS_Raghavan "30"^^xsd:integer)
+DataPropertyAssertion(univ:homepage univ:KS_Raghavan "http://drtc.isibang.ac.in/~ksr"^^xsd:anyURI)
+DataPropertyAssertion(univ:lastName univ:KS_Raghavan "Raghavan"^^xsd:string)
+DataPropertyAssertion(univ:rollNo univ:KS_Raghavan "Prof01102005"^^xsd:string)
+
+# Individual: univ:Knowledge_Management (univ:Knowledge_Management)
+
+ClassAssertion(univ:Research_Interest univ:Knowledge_Management)
+ObjectPropertyAssertion(univ:researchInterestOf univ:Knowledge_Management univ:KS_Raghavan)
+
+# Individual: univ:Library_and_Information_Science (univ:Library_and_Information_Science)
+
+ClassAssertion(univ:Discipline univ:Library_and_Information_Science)
+
+# Individual: univ:MA (univ:MA)
+
+ClassAssertion(univ:Qualification univ:MA)
+
+# Individual: univ:MCom (univ:MCom)
+
+ClassAssertion(univ:Qualification univ:MCom)
+
+# Individual: univ:MLISc (univ:MLISc)
+
+AnnotationAssertion(rdfs:comment univ:MLISc "Equivalent to ADIS"^^xsd:string)
+ClassAssertion(univ:Qualification univ:MLISc)
+
+# Individual: univ:MMath_1st_year (univ:MMath_1st_year)
+
+ClassAssertion(univ:MMath univ:MMath_1st_year)
+
+# Individual: univ:MMath_2nd_year (univ:MMath_2nd_year)
+
+ClassAssertion(univ:MMath univ:MMath_2nd_year)
+
+# Individual: univ:MPhil (univ:MPhil)
+
+ClassAssertion(univ:Qualification univ:MPhil)
+
+# Individual: univ:MSc (univ:MSc)
+
+ClassAssertion(univ:Qualification univ:MSc)
+
+# Individual: univ:Manju_M (Manju M.)
+
+AnnotationAssertion(rdfs:label univ:Manju_M "Manju M."^^xsd:string)
+ClassAssertion(univ:Assistant univ:Manju_M)
+ObjectPropertyAssertion(univ:belongsToCentre univ:Manju_M univ:ISIBC)
+ObjectPropertyAssertion(univ:hasAffiliation univ:Manju_M univ:DRTC)
+ObjectPropertyAssertion(univ:hasGender univ:Manju_M univ:female)
+ObjectPropertyAssertion(univ:hasQualification univ:Manju_M univ:BA)
+ObjectPropertyAssertion(univ:hasQualification univ:Manju_M univ:MLISc)
+DataPropertyAssertion(univ:email univ:Manju_M "manju@drtc.isibang.ac.in"^^xsd:string)
+DataPropertyAssertion(univ:firstName univ:Manju_M "Manju"^^xsd:string)
+DataPropertyAssertion(univ:lastName univ:Manju_M "M."^^xsd:string)
+DataPropertyAssertion(univ:state univ:Manju_M "Kerala"^^xsd:string)
+
+# Individual: univ:Mathematics (univ:Mathematics)
+
+ClassAssertion(univ:Discipline univ:Mathematics)
+
+# Individual: univ:Metrics (univ:Metrics)
+
+ClassAssertion(univ:Qualification univ:Metrics)
+
+# Individual: univ:Mithun_Raj_M (Mithun Raj M.)
+
+AnnotationAssertion(rdfs:label univ:Mithun_Raj_M "Mithun Raj M."^^xsd:string)
+ClassAssertion(univ:Postgraduate_Student univ:Mithun_Raj_M)
+ObjectPropertyAssertion(univ:belongsToCentre univ:Mithun_Raj_M univ:ISIBC)
+ObjectPropertyAssertion(univ:hasAffiliation univ:Mithun_Raj_M univ:DRTC)
+ObjectPropertyAssertion(univ:hasDiscipline univ:Mithun_Raj_M univ:Library_and_Information_Science)
+ObjectPropertyAssertion(univ:hasDiscipline univ:Mithun_Raj_M univ:Physics)
+ObjectPropertyAssertion(univ:hasGender univ:Mithun_Raj_M univ:male)
+ObjectPropertyAssertion(univ:hasQualification univ:Mithun_Raj_M univ:BSc)
+ObjectPropertyAssertion(univ:hasSupervisor univ:Mithun_Raj_M univ:Devika_P_Madalli)
+ObjectPropertyAssertion(univ:pgStudent univ:Mithun_Raj_M univ:ADIS_2nd_year)
+DataPropertyAssertion(univ:ZIP univ:Mithun_Raj_M ""^^xsd:string)
+DataPropertyAssertion(univ:city univ:Mithun_Raj_M "Trichur"^^xsd:string)
+DataPropertyAssertion(univ:country univ:Mithun_Raj_M "India"^^xsd:string)
+DataPropertyAssertion(univ:email univ:Mithun_Raj_M "mithun@drtc.isibang.ac.in"^^xsd:string)
+DataPropertyAssertion(univ:firstName univ:Mithun_Raj_M "Mithun Raj"^^xsd:string)
+DataPropertyAssertion(univ:homepage univ:Mithun_Raj_M "http://drtc.isibang.ac.in/~mithun"^^xsd:anyURI)
+DataPropertyAssertion(univ:state univ:Mithun_Raj_M "Kerala"^^xsd:string)
+
+# Individual: univ:NC2005 (univ:NC2005)
+
+ClassAssertion(univ:Conference univ:NC2005)
+ObjectPropertyAssertion(univ:eventsEditor univ:NC2005 univ:Devika_P_Madalli)
+DataPropertyAssertion(univ:heldOn univ:NC2005 "22-24 Feb 2005"^^xsd:string)
+DataPropertyAssertion(univ:topicOf univ:NC2005 "National Seminar on Consortia"^^xsd:string)
+
+# Individual: univ:NLP (univ:NLP)
+
+ClassAssertion(univ:Research_Interest univ:NLP)
+ObjectPropertyAssertion(univ:researchInterestOf univ:NLP univ:A.R.D._Prasad)
+
+# Individual: univ:Nabonita_Guha (univ:Nabonita_Guha)
+
+ClassAssertion(univ:Senior_Research_Student univ:Nabonita_Guha)
+ObjectPropertyAssertion(univ:belongsToCentre univ:Nabonita_Guha univ:ISIBC)
+ObjectPropertyAssertion(univ:hasAffiliation univ:Nabonita_Guha univ:DRTC)
+ObjectPropertyAssertion(univ:hasDiscipline univ:Nabonita_Guha univ:Library_and_Information_Science)
+ObjectPropertyAssertion(univ:hasGender univ:Nabonita_Guha univ:female)
+ObjectPropertyAssertion(univ:hasQualification univ:Nabonita_Guha univ:BA)
+ObjectPropertyAssertion(univ:hasQualification univ:Nabonita_Guha univ:MLISc)
+ObjectPropertyAssertion(univ:hasResearchInterest univ:Nabonita_Guha univ:Digital_library)
+ObjectPropertyAssertion(univ:hasResearchInterest univ:Nabonita_Guha univ:Ontology)
+ObjectPropertyAssertion(univ:hasSupervisor univ:Nabonita_Guha univ:A.R.D._Prasad)
+ObjectPropertyAssertion(univ:researchArea univ:Nabonita_Guha univ:Faceted_ontology)
+DataPropertyAssertion(univ:city univ:Nabonita_Guha "Ranchi"^^xsd:string)
+DataPropertyAssertion(univ:country univ:Nabonita_Guha "India"^^xsd:string)
+DataPropertyAssertion(univ:email univ:Nabonita_Guha ""^^xsd:string)
+DataPropertyAssertion(univ:firstName univ:Nabonita_Guha "Nabonita"^^xsd:string)
+DataPropertyAssertion(univ:homepage univ:Nabonita_Guha "http://drtc.isibang.ac.in/~guha"^^xsd:anyURI)
+DataPropertyAssertion(univ:lastName univ:Nabonita_Guha "Guha"^^xsd:string)
+DataPropertyAssertion(univ:rollNo univ:Nabonita_Guha "RS031"^^xsd:string)
+DataPropertyAssertion(univ:state univ:Nabonita_Guha "Jharkhand"^^xsd:string)
+
+# Individual: univ:Next_generation_catalogue (univ:Next_generation_catalogue)
+
+ClassAssertion(univ:Research_Topic univ:Next_generation_catalogue)
+
+# Individual: univ:Ontology (univ:Ontology)
+
+ClassAssertion(univ:Research_Interest univ:Ontology)
+ObjectPropertyAssertion(univ:researchInterestOf univ:Ontology univ:A.R.D._Prasad)
+ObjectPropertyAssertion(univ:researchInterestOf univ:Ontology univ:Biswanath_Dutta)
+
+# Individual: univ:Operations_Research (univ:Operations_Research)
+
+ClassAssertion(univ:Discipline univ:Operations_Research)
+
+# Individual: univ:PhD (univ:PhD)
+
+AnnotationAssertion(rdfs:comment univ:PhD "Bachelors of Commerce"^^xsd:string)
+ClassAssertion(univ:Qualification univ:PhD)
+
+# Individual: univ:Physics (univ:Physics)
+
+ClassAssertion(univ:Discipline univ:Physics)
+
+# Individual: univ:Pradip_Patra (univ:Pradip_Patra)
+
+ClassAssertion(univ:Undergraduate_Student univ:Pradip_Patra)
+ObjectPropertyAssertion(univ:belongsToCentre univ:Pradip_Patra univ:ISICC)
+ObjectPropertyAssertion(univ:hasAffiliation univ:Pradip_Patra univ:SMU)
+ObjectPropertyAssertion(univ:hasGender univ:Pradip_Patra univ:male)
+ObjectPropertyAssertion(univ:ugStudent univ:Pradip_Patra univ:BStat_2nd_year)
+DataPropertyAssertion(univ:ZIP univ:Pradip_Patra "100008"^^xsd:string)
+DataPropertyAssertion(univ:city univ:Pradip_Patra "Kolkata"^^xsd:string)
+DataPropertyAssertion(univ:country univ:Pradip_Patra "India"^^xsd:string)
+DataPropertyAssertion(univ:email univ:Pradip_Patra "pradip@isical.ac.in"^^xsd:string)
+DataPropertyAssertion(univ:firstName univ:Pradip_Patra "Pradip"^^xsd:string)
+DataPropertyAssertion(univ:homepage univ:Pradip_Patra "http://isical.ac.in/~pradip"^^xsd:anyURI)
+DataPropertyAssertion(univ:lastName univ:Pradip_Patra "Patra"^^xsd:string)
+DataPropertyAssertion(univ:state univ:Pradip_Patra "West Bengal"^^xsd:string)
+
+# Individual: univ:Quantitative_analysis (univ:Quantitative_analysis)
+
+ClassAssertion(univ:Research_Topic univ:Quantitative_analysis)
+
+# Individual: univ:Radharani_Rit (Radharani Rit)
+
+AnnotationAssertion(rdfs:label univ:Radharani_Rit "Radharani Rit"^^xsd:string)
+ClassAssertion(univ:Postgraduate_Student univ:Radharani_Rit)
+ObjectPropertyAssertion(univ:belongsToCentre univ:Radharani_Rit univ:ISIBC)
+ObjectPropertyAssertion(univ:hasAffiliation univ:Radharani_Rit univ:DRTC)
+ObjectPropertyAssertion(univ:hasDiscipline univ:Radharani_Rit univ:Commerce)
+ObjectPropertyAssertion(univ:hasDiscipline univ:Radharani_Rit univ:Library_and_Information_Science)
+ObjectPropertyAssertion(univ:hasGender univ:Radharani_Rit univ:female)
+ObjectPropertyAssertion(univ:hasQualification univ:Radharani_Rit univ:BCom)
+ObjectPropertyAssertion(univ:hasSupervisor univ:Radharani_Rit univ:KS_Raghavan)
+ObjectPropertyAssertion(univ:pgStudent univ:Radharani_Rit univ:ADIS_2nd_year)
+DataPropertyAssertion(univ:city univ:Radharani_Rit "Kolkata"^^xsd:string)
+DataPropertyAssertion(univ:country univ:Radharani_Rit "India"^^xsd:string)
+DataPropertyAssertion(univ:dateOfBirth univ:Radharani_Rit "2007-11-22"^^xsd:date)
+DataPropertyAssertion(univ:email univ:Radharani_Rit "radha@drtc.isibang.ac.in"^^xsd:string)
+DataPropertyAssertion(univ:firstName univ:Radharani_Rit "Radharani"^^xsd:string)
+DataPropertyAssertion(univ:homepage univ:Radharani_Rit "http://drtc.isibang.ac.in/~radha"^^xsd:anyURI)
+DataPropertyAssertion(univ:lastName univ:Radharani_Rit "Rit"^^xsd:string)
+DataPropertyAssertion(univ:rollNo univ:Radharani_Rit "ADIS0607"^^xsd:string)
+DataPropertyAssertion(univ:state univ:Radharani_Rit "West Bengal"^^xsd:string)
+
+# Individual: univ:SMU (univ:SMU)
+
+ClassAssertion(univ:Unit univ:SMU)
+ObjectPropertyAssertion(univ:affiliationOf univ:SMU univ:TSSK_Rao)
+
+# Individual: univ:SQC (univ:SQC)
+
+ClassAssertion(univ:Unit univ:SQC)
+
+# Individual: univ:SS_Panza (univ:SS_Panza)
+
+ClassAssertion(univ:Professor univ:SS_Panza)
+ObjectPropertyAssertion(univ:belongsToCentre univ:SS_Panza univ:ISICC)
+ObjectPropertyAssertion(univ:hasAffiliation univ:SS_Panza univ:EMU)
+ObjectPropertyAssertion(univ:hasGender univ:SS_Panza univ:male)
+ObjectPropertyAssertion(univ:hasResearchInterest univ:SS_Panza univ:Agrometry)
+
+# Individual: univ:SWS (univ:SWS)
+
+ClassAssertion(univ:Research_Interest univ:SWS)
+ObjectPropertyAssertion(univ:researchInterestOf univ:SWS univ:Biswanath_Dutta)
+
+# Individual: univ:Sanjeev_Kumar_Sunny (univ:Sanjeev_Kumar_Sunny)
+
+ClassAssertion(univ:Postgraduate_Student univ:Sanjeev_Kumar_Sunny)
+ObjectPropertyAssertion(univ:belongsToCentre univ:Sanjeev_Kumar_Sunny univ:ISIBC)
+ObjectPropertyAssertion(univ:hasAffiliation univ:Sanjeev_Kumar_Sunny univ:DRTC)
+ObjectPropertyAssertion(univ:hasDiscipline univ:Sanjeev_Kumar_Sunny univ:History)
+ObjectPropertyAssertion(univ:hasDiscipline univ:Sanjeev_Kumar_Sunny univ:Library_and_Information_Science)
+ObjectPropertyAssertion(univ:hasGender univ:Sanjeev_Kumar_Sunny univ:male)
+ObjectPropertyAssertion(univ:hasQualification univ:Sanjeev_Kumar_Sunny univ:BA)
+ObjectPropertyAssertion(univ:hasSupervisor univ:Sanjeev_Kumar_Sunny univ:A.R.D._Prasad)
+ObjectPropertyAssertion(univ:pgStudent univ:Sanjeev_Kumar_Sunny univ:ADIS_2nd_year)
+DataPropertyAssertion(univ:city univ:Sanjeev_Kumar_Sunny "Patna"^^xsd:string)
+DataPropertyAssertion(univ:dateOfBirth univ:Sanjeev_Kumar_Sunny "1980-12-08"^^xsd:date)
+DataPropertyAssertion(univ:email univ:Sanjeev_Kumar_Sunny "sanjeev@drtc.isibang.ac.in"^^xsd:string)
+DataPropertyAssertion(univ:firstName univ:Sanjeev_Kumar_Sunny "Sanjeev kumar"^^xsd:string)
+DataPropertyAssertion(univ:homepage univ:Sanjeev_Kumar_Sunny "http;//drtc.isibang.ac.in/~sanjeev"^^xsd:anyURI)
+DataPropertyAssertion(univ:lastName univ:Sanjeev_Kumar_Sunny "Sunny"^^xsd:string)
+DataPropertyAssertion(univ:rollNo univ:Sanjeev_Kumar_Sunny "ADIS0605"^^xsd:string)
+
+# Individual: univ:Semantic_Web_based_e-Government_services (univ:Semantic_Web_based_e-Government_services)
+
+ClassAssertion(univ:Research_Topic univ:Semantic_Web_based_e-Government_services)
+
+# Individual: univ:Statistics (univ:Statistics)
+
+ClassAssertion(univ:Discipline univ:Statistics)
+
+# Individual: univ:TSSK_Rao (univ:TSSK_Rao)
+
+ClassAssertion(univ:Professor univ:TSSK_Rao)
+ObjectPropertyAssertion(univ:belongsToCentre univ:TSSK_Rao univ:ISIBC)
+ObjectPropertyAssertion(univ:hasAffiliation univ:TSSK_Rao univ:SMU)
+ObjectPropertyAssertion(univ:hasGender univ:TSSK_Rao univ:male)
+ObjectPropertyAssertion(univ:hasResearchInterest univ:TSSK_Rao univ:Geometry)
+DataPropertyAssertion(univ:firstName univ:TSSK_Rao "TSSK"^^xsd:string)
+DataPropertyAssertion(univ:lastName univ:TSSK_Rao "Rao"^^xsd:string)
+
+# Individual: univ:Vinit_Kumar (univ:Vinit_Kumar)
+
+ClassAssertion(univ:Junior_Research_Student univ:Vinit_Kumar)
+ObjectPropertyAssertion(univ:belongsToCentre univ:Vinit_Kumar univ:ISIBC)
+ObjectPropertyAssertion(univ:hasAffiliation univ:Vinit_Kumar univ:DRTC)
+ObjectPropertyAssertion(univ:hasDiscipline univ:Vinit_Kumar univ:Library_and_Information_Science)
+ObjectPropertyAssertion(univ:hasGender univ:Vinit_Kumar univ:male)
+ObjectPropertyAssertion(univ:hasQualification univ:Vinit_Kumar univ:BSc)
+ObjectPropertyAssertion(univ:hasQualification univ:Vinit_Kumar univ:MLISc)
+ObjectPropertyAssertion(univ:hasResearchInterest univ:Vinit_Kumar univ:Digital_library)
+DataPropertyAssertion(univ:ZIP univ:Vinit_Kumar "233305"^^xsd:string)
+DataPropertyAssertion(univ:city univ:Vinit_Kumar "Ghazipur city"^^xsd:string)
+DataPropertyAssertion(univ:country univ:Vinit_Kumar "India"^^xsd:string)
+DataPropertyAssertion(univ:dateOfBirth univ:Vinit_Kumar "1984-08-02"^^xsd:date)
+DataPropertyAssertion(univ:email univ:Vinit_Kumar "vinit@drtc.isibang.ac.in"^^xsd:string)
+DataPropertyAssertion(univ:firstName univ:Vinit_Kumar "Vinit"^^xsd:string)
+DataPropertyAssertion(univ:homepage univ:Vinit_Kumar "http://drtc.isibang.ac.in/~vinit"^^xsd:anyURI)
+DataPropertyAssertion(univ:lastName univ:Vinit_Kumar "Kumar"^^xsd:string)
+DataPropertyAssertion(univ:phoneNo univ:Vinit_Kumar "9986180163"^^xsd:string)
+DataPropertyAssertion(univ:rollNo univ:Vinit_Kumar "RS065"^^xsd:string)
+DataPropertyAssertion(univ:state univ:Vinit_Kumar "UP"^^xsd:string)
+
+# Individual: univ:female (univ:female)
+
+ClassAssertion(univ:Gender univ:female)
+
+# Individual: univ:male (univ:male)
+
+ClassAssertion(univ:Gender univ:male)
+
+
+DifferentIndividuals(univ:DRTC univ:EMU univ:SMU univ:SQC)
+)
